@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/preloaderFragment">
+
+    <fragment
+        android:id="@+id/preloaderFragment"
+        android:name="com.microgoalplanner.ui.preloader.PreloaderFragment"
+        android:label="Preloader">
+        <action
+            android:id="@+id/action_preloaderFragment_to_onboardingFragment1"
+            app:destination="@id/onboardingFragment1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment1"
+        android:name="com.microgoalplanner.ui.onboarding.OnboardingFragment1"
+        android:label="Onboarding 1">
+        <action
+            android:id="@+id/action_onboardingFragment1_to_onboardingFragment2"
+            app:destination="@id/onboardingFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment2"
+        android:name="com.microgoalplanner.ui.onboarding.OnboardingFragment2"
+        android:label="Onboarding 2">
+        <action
+            android:id="@+id/action_onboardingFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.microgoalplanner.ui.home.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/goalsListFragment"
+        android:name="com.microgoalplanner.ui.goals.GoalsListFragment"
+        android:label="Goals" />
+
+    <fragment
+        android:id="@+id/stagesOverviewFragment"
+        android:name="com.microgoalplanner.ui.stages.StagesOverviewFragment"
+        android:label="Stages" />
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.microgoalplanner.ui.analytics.AnalyticsFragment"
+        android:label="Analytics" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.microgoalplanner.ui.settings.SettingsFragment"
+        android:label="Settings" />
+</navigation>
